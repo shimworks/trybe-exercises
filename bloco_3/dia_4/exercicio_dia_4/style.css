@@ -13,7 +13,7 @@ img{
     vertical-align: auto;
 }
 p{
-    display: inline-block;
+    float: right;
 }
 .botton{
     background-color: aliceblue;

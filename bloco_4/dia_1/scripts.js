@@ -16,11 +16,30 @@
 // console.log(perimetro);
 
 //Parte IV
-let nota = 57;
-if (nota >= 80) {
-    console.log ("Parabéns, você foi aprovada(o)!");
-} else if (nota < 80 && nota >= 60){
-    console.log ("Você está na nossa lista de espera");
-} else {
-    console.log ("Você foi reprovada(o)");
-}
+// let resultado
+// let nota = 80;
+// if (nota >= 80) {
+//     console.log ("Parabéns, você foi aprovada(o)!");
+//     resultado = "aprovada";
+// } else if (nota < 80 && nota >= 60){
+//     console.log ("Você está na nossa lista de espera");
+//     resultado = "lista";
+// } else {
+//     console.log ("Você foi reprovada(o)");
+//     resultado = "reprovada";
+// }
+
+// //Parte V
+// switch (resultado){
+//     case "aprovada":
+//         console.log("aprovada");
+//         break;
+//     case "lista":
+//         console.log("lista");
+//         break;
+//     case "reprovada":
+//         console.log("reprovada");
+//         break;
+//     default:
+//         console.log("não se aplica")
+// }   

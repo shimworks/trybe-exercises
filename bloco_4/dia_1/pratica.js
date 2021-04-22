@@ -115,3 +115,16 @@ if ((num1 % 2) == 0 || (num2 % 2) == 0 || (num3 % 2) == 0){
 } else {
     console.log("false");
 }
+
+//Parte 9
+let num1 = 6
+let num2 = 6
+let num3 = 6
+
+if ((num1 % 2) == 1 || (num2 % 2) == 1 || (num3 % 2) == 1){
+    console.log("true");
+} else {
+    console.log("false");
+}
+
+//Parte 10

@@ -143,3 +143,43 @@ if (custo < 0 || venda < 0){
 }
 
 //Parte 11
+let salario = 3000;
+let INSS = 0;
+let IR = 0;
+
+if (salario <= 1556.94 && salario > 0){
+    INSS = salario - (salario * 0.92)
+    console.log(INSS)
+} else if (salario >= 1556.95 && salario <= 2594.92){
+    INSS = salario - (salario * 0.91)
+    console.log(INSS)
+} else if (salario >= 2594.93 && salario <= 5189.82){
+    INSS = salario -(salario * 0.89)
+    console.log(INSS)
+} else if (salario >= 5189.82){
+    INSS = salario - (salario - 570.88)
+    console.log(INSS)
+} else{
+    console.log("Error")
+}
+
+let salariobase = salario - INSS;
+
+if (salariobase <= 1903.98 && salariobase > 0){
+    IR = 0
+    console.log(IR)
+} else if (salariobase >= 1903.99 && salariobase <= 2826.65){
+    IR = (salariobase * 0.075) - 142.80
+    console.log(IR)
+} else if (salariobase >= 2826.66 && salariobase <= 3751.05){
+    IR = (salariobase * 0.15) - 354.80
+    console.log(IR)
+} else if (salariobase >= 3751.06 && salariobase <= 4664.68){
+    IR = (salariobase * 0.225) - 636.13
+    console.log(IR)
+} else if (salariobase >= 4664.68){
+    IR = (salariobase * 0.275) - 869,36
+    console.log(IR)
+}
+console.log(salariobase - IR)
+

@@ -128,3 +128,18 @@ if ((num1 % 2) == 1 || (num2 % 2) == 1 || (num3 % 2) == 1){
 }
 
 //Parte 10
+let custo = 50;
+let venda = 100;
+
+custototal = custo * 1.20
+lucro = (venda - custototal) * 1000
+
+if (custo < 0 || venda < 0){
+    console.log("error");
+} else if (lucro > 0){
+    console.log(lucro)
+} else {
+    console.log("prejuizo")
+}
+
+//Parte 11

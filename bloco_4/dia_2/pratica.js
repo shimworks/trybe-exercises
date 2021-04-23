@@ -59,12 +59,28 @@
 //     console.log(impares)
 // }
 
-// Pratica 07
+// // Pratica 07
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let menor = numbers[0]
+// for (let index = 0; index < numbers.length; index += 1){
+//     if (menor > numbers[index]){
+//         menor = numbers[index]
+//     }
+// }
+// console.log(menor)
+
+// // Pratica 08
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let array = [] 
+// for (let index = 0; index <= 25; index += 1){
+//     array.push(index)
+// }
+// console.log(array)
+
+// Pratica 09
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let menor = numbers[0]
-for (let index = 0; index < numbers.length; index += 1){
-    if (menor > numbers[index]){
-        menor = numbers[index]
-    }
+let array = [] 
+for (let index = 0; index <= 25; index += 1){
+    array.push(index / 2)
 }
-console.log(menor)
+console.log(array)

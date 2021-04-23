@@ -45,16 +45,26 @@
 // }
 // console.log(soma)
 
-// Pratica 06
+// // Pratica 06
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let impares = 0
+// for (let index = 0; index < numbers.length; index += 1){
+//     if (1 == numbers[index] % 2){
+//         impares += 1
+//     }
+// }
+// if (impares == 0){
+//     console.log("nenhum valor impar encontrado")
+// } else if (impares > 0){
+//     console.log(impares)
+// }
+
+// Pratica 07
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let impares = 0
+let menor = numbers[0]
 for (let index = 0; index < numbers.length; index += 1){
-    if (1 == numbers[index] % 2){
-        impares += 1
+    if (menor > numbers[index]){
+        menor = numbers[index]
     }
 }
-if (impares == 0){
-    console.log("nenhum valor impar encontrado")
-} else if (impares > 0){
-    console.log(impares)
-}
+console.log(menor)

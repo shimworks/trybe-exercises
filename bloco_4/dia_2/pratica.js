@@ -35,12 +35,26 @@
 //     console.log("valor menor ou igual a 20");
 // }
 
-// Pratica 05
+// // Pratica 05
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let soma = 0
+// for (let index = 0; index < numbers.length; index += 1){
+//     if (soma < numbers[index]){
+//         soma = numbers[index]
+//     } 
+// }
+// console.log(soma)
+
+// Pratica 06
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let soma = 0
+let impares = 0
 for (let index = 0; index < numbers.length; index += 1){
-    if (soma < numbers[index]){
-        soma = numbers[index]
-    } 
+    if (1 == numbers[index] % 2){
+        impares += 1
+    }
 }
-console.log(soma)
+if (impares == 0){
+    console.log("nenhum valor impar encontrado")
+} else if (impares > 0){
+    console.log(impares)
+}

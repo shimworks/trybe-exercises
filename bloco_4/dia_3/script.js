@@ -59,3 +59,24 @@
 //     direita += 1;
 //     esquerda -= 1;
 // }
+
+// // Bonus 5
+// let num = 21;
+// let meio = (num + 1) / 2;
+// let bordaEsq = meio;
+// let bordaDir = meio;
+// let estrela = "*";
+
+// for (let indexLinha = 1; indexLinha <= meio; indexLinha += 1) {
+//     let linha = "";
+//     for (let indexColuna = 1; indexColuna <= num; indexColuna += 1) {
+//         if (indexColuna == bordaEsq || indexColuna == bordaDir || indexLinha == meio) {
+//             linha += estrela
+//         } else {
+//             linha += " ";
+//         };
+//     };
+//     bordaEsq -= 1;
+//     bordaDir += 1;
+//     console.log(linha);
+// }

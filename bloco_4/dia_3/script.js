@@ -38,7 +38,7 @@
 // };
 
 // // Aprofunde 4
-// let num = 5;
+// let num = 10;
 // let estrela = "*";
 // let linha = "";
 

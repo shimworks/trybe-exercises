@@ -43,4 +43,17 @@
 // }
 // console.log(checkArray("desenvolvimento"))
 
-// Prática Funções 02
+// // Prática Funções 02
+// function indiceMaior() {
+//     let arrayTeste = [2, 3, 6, 7, 10, 1];
+//     let valor = arrayTeste[0];
+//     for (let indice = 0; indice < arrayTeste.length; indice += 1) {
+//         if (arrayTeste[indice] > valor){
+//          valor = indice;
+//      };
+//     };
+//     return valor;
+// };
+// console.log(indiceMaior())
+
+// Prática Funções 03

@@ -71,3 +71,18 @@
 // }
 // console.log(indiceMenor())
 
+// Prática 04
+function maiorNome() {
+    let arrayTeste = ["José", 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+    valor = ""
+        for (let indexName = 0; indexName < arrayTeste.length; indexName += 1) {
+            for (let indexCount = 0; indexCount <= arrayTeste[indexName].length; indexCount += 1) {
+                if (arrayTeste[indexName].length > valor.length){
+                    valor = arrayTeste[indexName]
+                }
+            }
+
+        }
+ return valor
+};
+console.log(maiorNome());

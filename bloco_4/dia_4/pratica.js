@@ -56,4 +56,18 @@
 // };
 // console.log(indiceMaior())
 
-// Prática Funções 03
+// // Prática Funções 03
+// function indiceMenor() {
+//     let arrayTeste = [2, 4, 6, 7, 10, 0, -3];
+//     let valor = arrayTeste[0];
+//     let resultado = 0;
+//     for (let indice = 0; indice < arrayTeste.length; indice += 1) {
+//         if (arrayTeste[indice] < valor) {
+//             valor = arrayTeste[indice]
+//             resultado = indice
+//         }
+//     }
+//     return resultado
+// }
+// console.log(indiceMenor())
+

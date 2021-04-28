@@ -109,3 +109,8 @@
 // }
 // console.log(repetido());
 
+function somaGaus(){
+    for (let indice = 0; indice = array.length; indice += 1) {
+        
+    }
+}

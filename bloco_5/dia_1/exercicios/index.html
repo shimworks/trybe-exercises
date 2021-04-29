@@ -69,12 +69,11 @@
       }
       caixaAlta()
 
-
       function paragFun() {
         let result = "";
         let parag = document.getElementsByTagName("p");
         for (let key of parag){
-          result += ` ${key.innerText}`
+          result += ` ${key.innerHTML}`
         }
         return result
       }

@@ -40,23 +40,46 @@
     </div>
     <script>
       function trocaNome(){
-        let paragrafo = document.getElementsByTagName("p")[0].innerText
-        paragrafo  = "Daqui 2 Anos"
+        let paragrafo = document.getElementsByTagName("p")[1];
+        paragrafo.innerHTML = "Daqui 2 Anos estarei ganhando muito dinheiro e fritando o cerebro a cada dia.";
       }
       trocaNome()
-      
-      let parag = document.getElementsByTagName("p")
-      document.getElementsByTagName("div")[0].style.backgroundColor = "rgb(76,164,109)"
-      document.getElementsByTagName("div")[1].style.backgroundColor = "white"
-      document.getElementsByClassName("title")[0].innerText = "Exercício 5.1 - Java Script"
-      console.log(parag.p)
+
+      function trocaBackAmarelo(){
+        let backAmarelo = document.getElementsByTagName("div")[0];
+        backAmarelo.style.backgroundColor = "rgb(76,164,109)";
+      }
+      trocaBackAmarelo()
+
+      function trocaBackVermelho() {
+        let backVermelho = document.getElementsByTagName("div")[1];
+        backVermelho.style.backgroundColor = "white";
+      }
+      trocaBackVermelho()
+
+      function correcao(){
+        let corretor = document.getElementsByClassName("title")[0];
+        corretor.innerText = "Exercício 5.1 - Java Script";
+      }
+      correcao()
+
+      function caixaAlta(){
+        let maiusculo = document.getElementsByTagName("p")[1];
+        maiusculo.innerHTML = maiusculo.innerHTML.toUpperCase();
+      }
+      caixaAlta()
+
+
       function paragFun() {
-        let result = ""
+        let result = "";
+        let parag = document.getElementsByTagName("p");
         for (let key of parag){
           result += ` ${key.innerText}`
         }
         return result
       }
+      paragFun()
+
       /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()

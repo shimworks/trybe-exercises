@@ -39,10 +39,24 @@
       </div>
     </div>
     <script>
-      document.getElementsByTagName("p")[0].innerText = "Daqui 2 Anos".toUpperCase()
+      function trocaNome(){
+        let paragrafo = document.getElementsByTagName("p")[0].innerText
+        paragrafo  = "Daqui 2 Anos"
+      }
+      trocaNome()
+      
+      let parag = document.getElementsByTagName("p")
       document.getElementsByTagName("div")[0].style.backgroundColor = "rgb(76,164,109)"
       document.getElementsByTagName("div")[1].style.backgroundColor = "white"
       document.getElementsByClassName("title")[0].innerText = "Exercício 5.1 - Java Script"
+      console.log(parag.p)
+      function paragFun() {
+        let result = ""
+        for (let key of parag){
+          result += ` ${key.innerText}`
+        }
+        return result
+      }
       /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()

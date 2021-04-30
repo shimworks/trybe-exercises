@@ -20,13 +20,32 @@
     </div>
   </div>
   <script>
-    document.querySelector("#elementoOndeVoceEsta").parentElement.style.color = "blue"
-    document.querySelector('#pai').firstElementChild
-    document.querySelector("#elementoOndeVoceEsta").firstElementChild
-    document.querySelector("#elementoOndeVoceEsta").parentElement.innerHTML
-    document.querySelector("#elementoOndeVoceEsta").nextElementSibling
-    document.querySelector("#pai").firstChild
-    document.querySelector("#pai").firstElementChild.nextElementSibling.nextElementSibling
+    // 01
+    let aondeEstou = document.querySelector("#elementoOndeVoceEsta")
+    // 02
+    let paiAondeEstou = aondeEstou.parentElement
+    paiAondeEstou.style.color = "blue"
+    // 03
+    let textoFilhoDoFilho = aondeEstou.firstElementChild
+    textoFilhoDoFilho.innerText = "Adiciona Texto"
+    // 04
+    let primeiroFilhoDoPai = paiAondeEstou.firstElementChild
+    // 05
+    let primeiroFilhoOndeEstou = aondeEstou.previousElementSibling
+    // 06
+    let textoElement = aondeEstou.nextSibling
+    // 07
+    let terceiroFilho = aondeEstou.nextElementSibling;
+    // 08
+    let terceiroFilhoDoPai = paiAondeEstou.lastElementChild.previousElementSibling;
+//Parte II
+    document.querySelector('#pai').appendChild(document.createElement('p'))
+    document.querySelector("#elementoOndeVoceEsta").appendChild(document.createElement('p'))
+    document.querySelector('#primeiroFilhoDoFilho').appendChild(document.createElement('p'))
+    document.querySelector('#primeiroFilhoDoFilho')
+// Parte III
+    document.querySelector('#paiDoPai')
+
   </script>
 </body>
 </html>

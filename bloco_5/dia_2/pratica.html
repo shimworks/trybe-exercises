@@ -60,7 +60,11 @@
       // Variaves GLobais
       function criaDiv() {
         let novaDiv = document.createElement('div');
-        return novaDiv
+        return novaDiv;
+      }
+      function criah3() {
+        let novah3 = document.createElement('h3');
+        return novah3;
       }
       // 01
       let thebody = document.body;
@@ -90,19 +94,24 @@
       mainContentDiv.appendChild(rightContentDiv);
       // 07
       let imageDiv = document.createElement('img');
-      imageDiv.src = 'https://picsum.photos/200'
-      imageDiv.className = 'small-image'
-      leftContentDiv.appendChild(imageDiv)
+      imageDiv.src = 'https://picsum.photos/200';
+      imageDiv.className = 'small-image';
+      leftContentDiv.appendChild(imageDiv);
       // 08
       let listaValor = ["um", "dois", "tres", "quadro", "cinco", "seis", "sete", "oito", "nove", "dez"];
       for (let key of listaValor) {
         let listaDiv = document.createElement('li'); // precisa ser criado dentro do sistema de repetição para poder criar uma lista para cada elemento
-        listaDiv.innerHTML = [key]
+        listaDiv.innerHTML = [key];
         rightContentDiv.appendChild(listaDiv);
-        console.log(listaDiv.innerHTML)
       }
-      
-
+      // 09
+      let textH3Pri = criah3();
+      let textH3Seg = criah3();
+      let textH3Ter = criah3();
+      let allH3 = [textH3Pri, textH3Seg, textH3Ter]
+      for (let key2 of allH3) {
+        mainContentDiv.appendChild(key2);
+      }
 
     </script>
   </body>

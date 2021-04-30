@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // Variaves GLobais
+      function criaDiv() {
+        let novaDiv = document.createElement('div');
+        return novaDiv;
+      }
+      function criah3() {
+        let novah3 = document.createElement('h3');
+        return novah3;
+      }
+      // 01
+      let thebody = document.body;
+      let texth1 = document.createTextNode("Exercício 5.2 - JavaScript DOM");
+      let headerh1 = document.createElement('h1');
+      headerh1.appendChild(texth1);
+      thebody.appendChild(headerh1);
+      // 02
+      let mainContentDiv = criaDiv();
+      mainContentDiv.className = 'main-content'
+      thebody.appendChild(mainContentDiv);
+      // 03
+      let centerContentDiv = criaDiv();
+      centerContentDiv.className = 'center-content';
+      mainContentDiv.appendChild(centerContentDiv);
+      // 04
+      let paragrafo = document.createElement('p');
+      paragrafo.innerText = ('Adicione Um texto');
+      centerContentDiv.appendChild(paragrafo);
+      // 05
+      let leftContentDiv = criaDiv();
+      leftContentDiv.className = 'left-content';
+      mainContentDiv.appendChild(leftContentDiv);
+      // 06
+      let rightContentDiv = criaDiv();
+      rightContentDiv.className = 'right-content';
+      mainContentDiv.appendChild(rightContentDiv);
+      // 07
+      let imageDiv = document.createElement('img');
+      imageDiv.src = 'https://picsum.photos/200';
+      imageDiv.className = 'small-image';
+      leftContentDiv.appendChild(imageDiv);
+      // 08
+      let listaValor = ["um", "dois", "tres", "quadro", "cinco", "seis", "sete", "oito", "nove", "dez"];
+      for (let key of listaValor) {
+        let listaDiv = document.createElement('li'); // precisa ser criado dentro do sistema de repetição para poder criar uma lista para cada elemento
+        listaDiv.innerHTML = [key];
+        rightContentDiv.appendChild(listaDiv);
+      }
+      // 09
+      let textH3Pri = criah3();
+      let textH3Seg = criah3();
+      let textH3Ter = criah3();
+      let allH3 = [textH3Pri, textH3Seg, textH3Ter]
+      for (let key2 of allH3) {
+        mainContentDiv.appendChild(key2);
+      }
+      // Parte II
+      // 01
+      headerh1.className = 'title';
+      // 02
+      for (let key3 of allH3) {
+        key3.className = 'description'
+      }
+      // 03
+      let leftContentParent = document.querySelector('.left-content').parentElement;
+      leftContentParent.removeChild(leftContentDiv);
+      // 04
+      rightContentDiv.style.margin = "auto";
+      // 05
+      centerContentDiv.style.backgroundColor = "green";
+      // 06
+      let listaRemoveDiv = document.querySelector('.right-content')
+      listaRemoveDiv.removeChild(listaRemoveDiv.lastChild)
+      listaRemoveDiv.removeChild(listaRemoveDiv.lastChild)
+    </script>
+  </body>
+</html>

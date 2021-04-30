@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,5 +19,51 @@
       <div id="quartoEUltimoFilho"></div>
     </div>
   </div>
+  <script>
+// // Parte I
+//     // 01
+//     let aondeEstou = document.querySelector("#elementoOndeVoceEsta");
+//     // 02
+//     let paiAondeEstou = aondeEstou.parentElement;
+//     paiAondeEstou.style.color = "blue";
+//     // 03
+//     let textoFilhoDoFilho = aondeEstou.firstElementChild;
+//     textoFilhoDoFilho.innerText = "Adiciona Texto";
+//     // 04
+//     let primeiroFilhoDoPai = paiAondeEstou.firstElementChild;
+//     // 05
+//     let primeiroFilhoOndeEstou = aondeEstou.previousElementSibling;
+//     // 06
+//     let textoElement = aondeEstou.nextSibling;
+//     // 07
+//     let terceiroFilho = aondeEstou.nextElementSibling;
+//     // 08
+//     let terceiroFilhoDoPai = paiAondeEstou.lastElementChild.previousElementSibling;
+// //Parte II
+//     // 01
+//     let pai = document.querySelector('#pai');
+//     let irmaoElementoAondeEstou = document.createElement('div');
+//     irmaoElementoAondeEstou.id = 'irmaoElementoAondeEstou';
+//     pai.appendChild(irmaoElementoAondeEstou);
+//     // 02
+//     let aondeEstou = document.querySelector("#elementoOndeVoceEsta");
+//     let filhoAondeEstou = document.createElement('div');
+//     filhoAondeEstou.id = 'filhoAondeEstou';
+//     aondeEstou.appendChild(filhoAondeEstou);
+//     // 03
+//     let primeiroFilhoDoFilho = document.querySelector('#primeiroFilhoDoFilho');
+//     let filhoDoPrimeiroFilho = document.createElement('div');
+//     filhoDoPrimeiroFilho.id = 'filhoDoPrimeiroFilho'
+//     primeiroFilhoDoFilho.appendChild(filhoDoPrimeiroFilho);
+//     // 04
+//     let acessaTerceiroFilho = filhoDoPrimeiroFilho.parentElement.parentElement.nextElementSibling
+// Parte III
+    let allDivs = document.querySelectorAll('div')
+    for (let key of allDivs) {
+      if (key.id !== 'paiDoPai' && key.id !== 'pai' && key.id !== 'elementoOndeVoceEsta' && key.id !== 'primeiroFilhoDoFilho') {
+        key.remove();
+      }
+    }
+  </script>
 </body>
 </html>

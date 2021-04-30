@@ -112,7 +112,24 @@
       for (let key2 of allH3) {
         mainContentDiv.appendChild(key2);
       }
-
+      // Parte II
+      // 01
+      headerh1.className = 'title';
+      // 02
+      for (let key3 of allH3) {
+        key3.className = 'description'
+      }
+      // 03
+      let leftContentParent = document.querySelector('.left-content').parentElement;
+      leftContentParent.removeChild(leftContentDiv);
+      // 04
+      rightContentDiv.style.margin = "auto";
+      // 05
+      centerContentDiv.style.backgroundColor = "green";
+      // 06
+      let listaRemoveDiv = document.querySelector('.right-content')
+      listaRemoveDiv.removeChild(listaRemoveDiv.lastChild)
+      listaRemoveDiv.removeChild(listaRemoveDiv.lastChild)
     </script>
   </body>
 </html>

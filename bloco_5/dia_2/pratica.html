@@ -94,12 +94,14 @@
       imageDiv.className = 'small-image'
       leftContentDiv.appendChild(imageDiv)
       // 08
-      let listaDiv = document.createElement('li');
-      let listaValor = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      let listaValor = ["um", "dois", "tres", "quadro", "cinco", "seis", "sete", "oito", "nove", "dez"];
       for (let key of listaValor) {
+        let listaDiv = document.createElement('li'); // precisa ser criado dentro do sistema de repetição para poder criar uma lista para cada elemento
         listaDiv.innerHTML = [key]
+        rightContentDiv.appendChild(listaDiv);
+        console.log(listaDiv.innerHTML)
       }
-      rightContentDiv.appendChild(listaDiv);
+      
 
 
     </script>

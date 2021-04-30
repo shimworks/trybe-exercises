@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // Variaves GLobais
+      function criaDiv() {
+        let novaDiv = document.createElement('div');
+        return novaDiv
+      }
+      // 01
+      let thebody = document.body;
+      let texth1 = document.createTextNode("Exercício 5.2 - JavaScript DOM");
+      let headerh1 = document.createElement('h1');
+      headerh1.appendChild(texth1);
+      thebody.appendChild(headerh1);
+      // 02
+      let mainContentDiv = criaDiv();
+      mainContentDiv.className = 'main-content'
+      thebody.appendChild(mainContentDiv);
+      // 03
+      let centerContentDiv = criaDiv();
+      centerContentDiv.className = 'center-content';
+      mainContentDiv.appendChild(centerContentDiv);
+      // 04
+      let paragrafo = document.createElement('p');
+      paragrafo.innerText = ('Adicione Um texto');
+      centerContentDiv.appendChild(paragrafo);
+      // 05
+      let leftContentDiv = criaDiv();
+      leftContentDiv.className = 'left-content';
+      mainContentDiv.appendChild(leftContentDiv);
+      // 06
+      let rightContentDiv = criaDiv();
+      rightContentDiv.className = 'right-content';
+      mainContentDiv.appendChild(rightContentDiv);
+      // 07
+      let imageDiv = document.createElement('img');
+      imageDiv.src = 'https://picsum.photos/200'
+      imageDiv.className = 'small-image'
+      leftContentDiv.appendChild(imageDiv)
+      // 08
+      let listaDiv = document.createElement('li');
+      let listaValor = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      for (let key of listaValor) {
+        listaDiv.innerHTML = [key]
+      }
+      rightContentDiv.appendChild(listaDiv);
+
+
+    </script>
+  </body>
+</html>

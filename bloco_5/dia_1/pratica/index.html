@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2 id="page-title" >Título</h2>
+    <p id="paragraph" class="parga" >Dê uma cor para este parágrafo!</p>
+    <h4 id="subtitle">Subtítulo</h4>
+    <p id="second-paragraph" class="parga" >Segundo parágrafo!</p>
+
+    <script>
+      let novoTitulo = document.querySelector('#page-title').innerText = "Newgame"
+      var paragraph = document.querySelector(".parga");
+      let novoSubTitulo = document.querySelector("#subtitle").innerText = 'Tenshura'
+      let novoPara2 = document.querySelector('#second-paragraph').innerText = "I'm not a bad Slime"
+      paragraph.style.color = "red";
+      let parga = document.querySelectorAll('.parga')[0]
+      parga.style.color = "blue";
+      let tagParga =  document.querySelectorAll('p')[1]
+      tagParga.style.color = "brown"
+    
+    </script>
+  </body>
+</html>

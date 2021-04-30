@@ -87,7 +87,7 @@
 // };
 // console.log(maiorNome());
 
-// // Prática 05 (Falta entender o processo de checkagem dos valores)
+// Prática 05 (Falta entender o processo de checkagem dos valores)
 // function repetido() {
 //     let arrayTeste = [2, 3, 2, 5, 8, 2, 3]
 //     let repete = 1
@@ -109,8 +109,8 @@
 // }
 // console.log(repetido());
 
-function somaGaus(){
-    for (let indice = 0; indice = array.length; indice += 1) {
+// function somaGaus(){
+//     for (let indice = 0; indice = array.length; indice += 1) {
         
-    }
-}
+//     }
+// }

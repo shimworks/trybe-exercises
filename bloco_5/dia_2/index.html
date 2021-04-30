@@ -20,7 +20,7 @@
     </div>
   </div>
   <script>
-    // // Parte I
+// // Parte I
     // // 01
     // let aondeEstou = document.querySelector("#elementoOndeVoceEsta");
     // // 02
@@ -39,27 +39,31 @@
     // let terceiroFilho = aondeEstou.nextElementSibling;
     // // 08
     // let terceiroFilhoDoPai = paiAondeEstou.lastElementChild.previousElementSibling;
-//Parte II
-    // 01
-    let pai = document.querySelector('#pai');
-    let irmaoElementoAondeEstou = document.createElement('div');
-    irmaoElementoAondeEstou.id = 'irmaoElementoAondeEstou';
-    pai.appendChild(irmaoElementoAondeEstou);
-    // 02
-    let aondeEstou = document.querySelector("#elementoOndeVoceEsta");
-    let filhoAondeEstou = document.createElement('div');
-    filhoAondeEstou.id = 'filhoAondeEstou';
-    aondeEstou.appendChild(filhoAondeEstou);
-    // 03
-    let primeiroFilhoDoFilho = document.querySelector('#primeiroFilhoDoFilho');
-    let filhoDoPrimeiroFilho =  document.createElement('div');
-    filhoDoPrimeiroFilho.id = 'filhoDoPrimeiroFilho'
-    primeiroFilhoDoFilho.appendChild(filhoDoPrimeiroFilho);
-    // 04
-    let acessaTerceiroFilho = filhoDoPrimeiroFilho.parentElement.parentElement.nextElementSibling
+// //Parte II
+//     // 01
+//     let pai = document.querySelector('#pai');
+//     let irmaoElementoAondeEstou = document.createElement('div');
+//     irmaoElementoAondeEstou.id = 'irmaoElementoAondeEstou';
+//     pai.appendChild(irmaoElementoAondeEstou);
+//     // 02
+//     let aondeEstou = document.querySelector("#elementoOndeVoceEsta");
+//     let filhoAondeEstou = document.createElement('div');
+//     filhoAondeEstou.id = 'filhoAondeEstou';
+//     aondeEstou.appendChild(filhoAondeEstou);
+//     // 03
+//     let primeiroFilhoDoFilho = document.querySelector('#primeiroFilhoDoFilho');
+//     let filhoDoPrimeiroFilho =  document.createElement('div');
+//     filhoDoPrimeiroFilho.id = 'filhoDoPrimeiroFilho'
+//     primeiroFilhoDoFilho.appendChild(filhoDoPrimeiroFilho);
+//     // 04
+//     let acessaTerceiroFilho = filhoDoPrimeiroFilho.parentElement.parentElement.nextElementSibling
 // Parte III
-    document.querySelector('#paiDoPai')
-
+    let allDivs = document.querySelectorAll('div')
+    for (let key of allDivs) {
+      if (key.id !== 'paiDoPai' && key.id !== 'pai' && key.id !== 'elementoOndeVoceEsta' && key.id !== 'primeiroFilhoDoFilho') {
+        key.remove();
+      }
+    }
   </script>
 </body>
 </html>

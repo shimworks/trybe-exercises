@@ -44,14 +44,14 @@ function criaDiasNumericos() {
 criaDiasNumericos();
 
 // 02
-function criaBotao() {
+function criaBotaoHoliday() {
   let botao = document.createElement('button');
   let buttonContainer = document.getElementsByClassName('buttons-container')[0];
   botao.className = 'btn-holiday';
   botao.innerHTML = 'Feriados';
   buttonContainer.appendChild(botao);
 };
-criaBotao();
+criaBotaoHoliday();
 
 // 03
 function clica() {
@@ -71,4 +71,13 @@ function clica() {
   })
 };
 clica();
-  
+
+// 04
+function criaBotaoSexta() {
+  let botao = document.createElement('button');
+  let buttonContainer = document.getElementsByClassName('buttons-container')[0];
+  botao.className = 'btn-friday';
+  botao.innerHTML = 'Sexta-feira';
+  buttonContainer.appendChild(botao);
+};
+criaBotaoSexta();

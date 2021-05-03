@@ -15,9 +15,9 @@ createDaysOfTheWeek();
 
 // Escreva seu código abaixo.
 // 01
-const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];;
+const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 let ulListaDays = document.getElementById('days');
-let holidays = [24, 25, 31]
+let holidays = [24, 25, 31];
 
 function criaDiasNumericos() {
   for (let dia of dezDaysList) {
@@ -45,18 +45,30 @@ criaDiasNumericos();
 
 // 02
 function criaBotao() {
-  let textoBotao = "Feriados"
-  let botao = document.createElement('button')
-  let buttonContainer = document.querySelector('.buttons-container')
-  botao.className = 'btn-holiday'
-  botao.innerHTML = 'Feriados'
-  buttonContainer.appendChild(botao)
+  let botao = document.createElement('button');
+  let buttonContainer = document.getElementsByClassName('buttons-container')[0];
+  botao.className = 'btn-holiday';
+  botao.innerHTML = 'Feriados';
+  buttonContainer.appendChild(botao);
 };
 criaBotao();
 
 // 03
-addEventListener.
 function clica() {
+  let botaoHoliday = document.querySelector('.btn-holiday');
+  let holiday = document.getElementsByClassName('holiday');
+  let backColor = 'rgb(238,238,238)';
+  let novaCor = 'lightgreen';
 
-}
+  botaoHoliday.addEventListener('click', function () {
+    for (let index = 0; index < holiday.length; index += 1) {
+      if (holiday[index].style.backgroundColor === novaCor) {
+        holiday[index].style.backgroundColor = backColor;
+      } else {
+        holiday[index].style.backgroundColor = novaCor
+      }
+    }
+  })
+};
 clica();
+  

@@ -65,7 +65,7 @@ function clicaHoliday() {
       if (holiday[index].style.backgroundColor === novaCor) {
         holiday[index].style.backgroundColor = backColor;
       } else {
-        holiday[index].style.backgroundColor = novaCor
+        holiday[index].style.backgroundColor = novaCor;
       }
     }
   })
@@ -86,14 +86,14 @@ criaBotaoSexta();
 function clicaSexta(sextas) {
   let botaoSexta = document.querySelector('#btn-friday');
   let sexta = document.getElementsByClassName('friday');
-  let text = 'Sexta-feira'
+  let text = 'Sexta-feira';
 
   botaoSexta.addEventListener('click', function () {
     for (let index = 0; index < sexta.length; index += 1) {
       if (sexta[index].innerHTML === text) {
         sexta[index].innerHTML = sextas[index];
       } else {
-        sexta[index].innerHTML = text
+        sexta[index].innerHTML = text;
       }
     }
   })
@@ -126,33 +126,29 @@ function tarefa (oqueFazer) {
   let minhaTarefa = document.querySelector('.my-tasks');
   let span = document.createElement('span');
   span.innerHTML = oqueFazer;
-  minhaTarefa.appendChild(span)
+  minhaTarefa.appendChild(span);
 }
 tarefa('Projeto');
 
 // 08
 function legendaColorida (cor) {
-  let divMyTasks =  document.querySelector('.my-tasks')
-  let divLegen = document.createElement('div')
-  divLegen.className = 'task'
-  divLegen.style.backgroundColor = cor
-  divMyTasks.appendChild(divLegen)
+  let divMyTasks =  document.querySelector('.my-tasks');
+  let divLegen = document.createElement('div');
+  divLegen.className = 'task';
+  divLegen.style.backgroundColor = cor;
+  divMyTasks.appendChild(divLegen);
 }
 legendaColorida ('red');
 
 // 09
 function taskOuNao () {
-  let task = document.querySelector('.my-tasks').lastElementChild
-  let selectedTask = document.getElementsByClassName('task selected')
-  console.log(selectedTask)
+  let task = document.querySelector('.task')
 
   task.addEventListener('click', function() {
     if (task.className === 'task'){
-      task.className = 'task selected'
-      task.style.backgroundColor = 'lightgreen'
+      task.className = 'task selected';
     } else if (task.className === 'task selected') {
-      task.className = 'task'
-      task.style.backgroundColor = 'red'
+      task.className = 'task';
     }
   })
 };
@@ -160,15 +156,18 @@ taskOuNao();
 
 // 10
 function corDia() {
-  let diaTask = document.querySelector('#days');
-  let corBack = document.querySelector('.task').style.backgroundColor;
+  let taskSel = document.getElementsByClassName('task selected');
+  let dias = document.querySelector('#days');
+  let task = document.querySelector('.task');
+  let taskCor = task.style.backgroundColor;
 
-  diaTask.addEventListener('click', function(evento) {
-    console.log(evento.target)
-    if (evento.target.style.color === '') {
-      evento.target.style.color = corBack
-    } else if (evento.target.style.color === corBack) {
-      evento.target.style.color = ''
+  dias.addEventListener('click', function(evento) {
+    let corDoAlvo = evento.target.style.color;
+    if (taskSel.length > 0 && corDoAlvo !== taskCor) {
+      let cor = taskSel[0].style.backgroundColor;
+      evento.target.style.color = cor;
+    } else if (corDoAlvo === taskCor && taskSel.length !== 0) {
+      evento.target.style.color = 'rgb(119,119,119)';
     }
   })
 }

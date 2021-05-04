@@ -140,7 +140,7 @@ function legendaColorida (cor) {
   divMyTasks.appendChild(divLegen)
   divLegen.style.backgroundColor = cor
 }
-legendaColorida ('lightgreen');
+legendaColorida ('red');
 
 // 09
 function taskOuNao () {
@@ -148,9 +148,9 @@ function taskOuNao () {
 
   task.addEventListener('click', function() {
     if (task.className === 'task'){
-      task.className = 'task-selected'
-      task.style.backgroundColor = 'green'
-    } else if (task.className === 'task-selected') {
+      task.className = 'task selected'
+      task.style.backgroundColor = 'lightgreen'
+    } else if (task.className === 'task selected') {
       task.className = 'task'
       task.style.backgroundColor = 'red'
     }

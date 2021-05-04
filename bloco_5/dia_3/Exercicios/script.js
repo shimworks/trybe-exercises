@@ -102,3 +102,9 @@ let diasSextas = [4, 11, 18, 25]
 clicaSexta(diasSextas);
 
 // 06
+ul.addEventListener('mouseover', zoom)
+function zoom (bagulho) {
+  let alvo = bagulho.target
+  console.log(alvo)
+
+}

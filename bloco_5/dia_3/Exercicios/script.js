@@ -124,11 +124,9 @@ diaMouseOut();
 // 07
 function tarefa (oqueFazer) {
   let minhaTarefa = document.querySelector('.my-tasks')
-  let criaSpan = document.createElement('span')
-  minhaTarefa.appendChild(criaSpan)
-  let span = document.querySelector('span')
+  let span = document.createElement('span')
   span.innerHTML = oqueFazer
-
+  minhaTarefa.appendChild(criaSpan)
 }
 tarefa('projeto');
 
@@ -145,6 +143,8 @@ legendaColorida ('red');
 // 09
 function taskOuNao () {
   let task = document.querySelector('.my-tasks').lastElementChild
+  let selectedTask = document.getElementsByClassName('task selected')
+  console.log(selectedTask)
 
   task.addEventListener('click', function() {
     if (task.className === 'task'){
@@ -159,3 +159,17 @@ function taskOuNao () {
 taskOuNao();
 
 // 10
+function corDia() {
+  let diaTask = document.querySelector('#days');
+  let corBack = document.querySelector('.task').style.backgroundColor;
+
+  diaTask.addEventListener('click', function(evento) {
+    console.log(evento.target)
+    if (evento.target.style.color === '') {
+      evento.target.style.color = corBack
+    } else if (evento.target.style.color === corBack) {
+      evento.target.style.color = ''
+    }
+  })
+}
+corDia();

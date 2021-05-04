@@ -132,11 +132,11 @@ tarefa('Projeto');
 
 // 08
 function legendaColorida (cor) {
+  let divMyTasks =  document.querySelector('.my-tasks')
   let divLegen = document.createElement('div')
   divLegen.className = 'task'
-  let divMyTasks =  document.querySelector('.my-tasks')
-  divMyTasks.appendChild(divLegen)
   divLegen.style.backgroundColor = cor
+  divMyTasks.appendChild(divLegen)
 }
 legendaColorida ('red');
 

@@ -102,9 +102,23 @@ let diasSextas = [4, 11, 18, 25]
 clicaSexta(diasSextas);
 
 // 06
-ul.addEventListener('mouseover', zoom)
-function zoom (bagulho) {
-  let alvo = bagulho.target
-  console.log(alvo)
+function diaMouseOver () {
+  let dias = document.querySelector('#days');
 
-}
+  dias.addEventListener('mouseover', function(evento) {
+    evento.target.style.fontSize = '30px';
+    evento.target.style.fontweight = '600';
+  })
+};
+function diaMouseOut() {
+  let dias = document.querySelector('#days');
+
+  dias.addEventListener('mouseout', function (evento) {
+    evento.target.style.fontSize = '20px';
+    evento.target.style.fontweight = '200';
+  })
+};
+diaMouseOver();
+diaMouseOut();
+
+// 07

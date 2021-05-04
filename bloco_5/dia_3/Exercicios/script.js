@@ -141,3 +141,21 @@ function legendaColorida (cor) {
   divLegen.style.backgroundColor = cor
 }
 legendaColorida ('lightgreen');
+
+// 09
+function taskOuNao () {
+  let task = document.querySelector('.my-tasks').lastElementChild
+
+  task.addEventListener('click', function() {
+    if (task.className === 'task'){
+      task.className = 'task-selected'
+      task.style.backgroundColor = 'green'
+    } else if (task.className === 'task-selected') {
+      task.className = 'task'
+      task.style.backgroundColor = 'red'
+    }
+  })
+};
+taskOuNao();
+
+// 10

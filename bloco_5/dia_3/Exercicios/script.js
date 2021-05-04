@@ -122,3 +122,22 @@ diaMouseOver();
 diaMouseOut();
 
 // 07
+function tarefa (oqueFazer) {
+  let minhaTarefa = document.querySelector('.my-tasks')
+  let criaSpan = document.createElement('span')
+  minhaTarefa.appendChild(criaSpan)
+  let span = document.querySelector('span')
+  span.innerHTML = oqueFazer
+
+}
+tarefa('projeto');
+
+// 08
+function legendaColorida (cor) {
+  let divLegen = document.createElement('div')
+  divLegen.className = 'task'
+  let divMyTasks =  document.querySelector('.my-tasks')
+  divMyTasks.appendChild(divLegen)
+  divLegen.style.backgroundColor = cor
+}
+legendaColorida ('lightgreen');

@@ -123,12 +123,12 @@ diaMouseOut();
 
 // 07
 function tarefa (oqueFazer) {
-  let minhaTarefa = document.querySelector('.my-tasks')
-  let span = document.createElement('span')
-  span.innerHTML = oqueFazer
-  minhaTarefa.appendChild(criaSpan)
+  let minhaTarefa = document.querySelector('.my-tasks');
+  let span = document.createElement('span');
+  span.innerHTML = oqueFazer;
+  minhaTarefa.appendChild(span)
 }
-tarefa('projeto');
+tarefa('Projeto');
 
 // 08
 function legendaColorida (cor) {

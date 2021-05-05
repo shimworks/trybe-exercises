@@ -1,20 +1,20 @@
 window.onload = function() {
   function setBackgroundColor(color) {
     let content = document.querySelector('.content')
-    content.getElementsByClassName.backgroundColor = color;
+    content.style.backgroundColor = color;
     localStorage.setItem('backgroundColor', color);
   }
-  function setTextColor(color) {
+  function setTextColor(colortext) {
     let paragrafo = document.querySelectorAll('.paragrafo');
-    for (let index = 0; index > paragrafo.length; index += 1) {
-      paragrafo[index],style.color = color;
+    for (let index = 0; index < paragrafo.length; index += 1) {
+      paragrafo[index].style.color = colortext;
     }
-    localStorage.setItem('fontColor', color);
+    localStorage.setItem('fontColor', colortext);
   }
 
   function setFontSize(size) {
     let paragrafo = document.querySelectorAll('.paragrafo');
-    for (let index = 0; index > paragrafo.length; index += 1) {
+    for (let index = 0; index < paragrafo.length; index += 1) {
       paragrafo[index].style.fontSize = size;
     }
     localStorage.setItem('fontSize', size);
@@ -22,7 +22,7 @@ window.onload = function() {
   function setLineHeight(height) {
     let paragrafo = document.querySelectorAll('.paragrafo');
     for (let index = 0; index < paragrafo.length; index += 1) {
-      paragrafo[index].style.lineheight = height
+      paragrafo[index].style.lineHeight = height
     }
     localStorage.setItem('lineHeight', height);
   }
@@ -74,13 +74,13 @@ window.onload = function() {
     if (backgroundColor) setBackgroundColor(backgroundColor);
     
     let fontColor = localStorage.getItem('fontColor');
-    if (fontColor) setBackgroundColor(fontColor);
+    if (fontColor) setTextColor(fontColor);
     
     let fontSize = localStorage.getItem('fontSize');
-    if (fontSize) setBackgroundColor(fontSize);
+    if (fontSize) setFontSize(fontSize);
     
     let lineHeight = localStorage.getItem('lineHeight');
-    if (lineHeight) setBackgroundColor(lineHeight);
+    if (lineHeight) setLineHeight(lineHeight);
     
     let fontFamily = localStorage.getItem('fontFamily');
     if (fontFamily) setFontFamily(fontFamily);

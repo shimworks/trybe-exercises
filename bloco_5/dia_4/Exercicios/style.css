@@ -2,3 +2,14 @@ body {
   width: 90%;
   margin: auto;
 }
+.section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid green;
+}
+.controler {
+  display: flex;
+  flex-direction: column;
+}

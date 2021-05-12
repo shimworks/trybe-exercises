@@ -8,25 +8,68 @@
   <title>Form</title>
 </head>
 <body>
-  <form action="" method="GET">
-  <fieldset>
-    <input type="text" name="name" id="nome" placeholder="Nome Completo" maxlength="40"required>
-    <input type="email" name="email" id="email" placeholder="e-mail" maxlength="50"required>
-    <input type="text" name="cpf" id="cpf" placeholder="CPF" maxlength="11" required>
-    <input type="text" name="adress" id="adress" placeholder="Endereço" maxlength="200" required>
-    <input type="text" name="ciry" id="city" placeholder="city" maxlength="28" required>
-    <select name="estado" id="dropdown-estado"></select>
-    <label for="casa">Casa<input type="radio" name="casa" id="casa" required></label>
-    <label for="apartamento">Apartamento<input type="radio" name="apart" id="apartamento" required></label>
-  </fieldset>
-  <fieldset>
-    <textarea name="resumo" id="text" maxlength="500" placeholder="Resumo do Curriculo" required></textarea>
-    <input type="text" name="cargo" id="cargo" placeholder="Cargo" maxlength="40" required>
-    <input type="text" name="cargo-description" id="cargoDesc" placeholder="Descrição do Cargo" maxlength="500" required>
-    <input type="date" name="data" id="data" required>
-  </fieldset>
-  <input type="submit" value="Enviar">
-</form>
+  <head class="form-header" ></head>
+  <h1> Formulário para cadastro de curriculo</h1>
+  <p>Preencha os campos abaixo.</p>
+  <main>
+    <form id="cv-form" action="" method="GET">
+      <div class="form-row">    
+        <fieldset>
+          <div class="line-content">
+            <label for="name">Nome: </label>
+            <input type="text" name="name" id="nome" maxlength="40" required>
+          </div>
+          <div class="line-content">
+            <label for="email">Endereço de e-mail</label>
+            <input type="email" name="email" id="email" maxlength="50" required>
+          </div>
+          <div class="line-content">
+            <label for="cpf-number">CPF: </label>
+            <input type="text" name="cpf" id="cpf-number" maxlength="11" required>
+          </div>
+          <div class="line-content">
+            <label for="">Endereço: </label>
+            <input type="text" name="adress" id="adress" maxlength="200" required>
+          </div>
+          <div class="line-content">
+            <label for="city">Cidade: </label>
+            <input type="text" name="city" id="city" maxlength="200" required>
+          </div>
+          <div class="line-content">
+            <label for="state">Estado: </label>
+            <select name="state" id="state" required></select>
+            <option disabled selected value>Selecione seu estado</option>
+          </div>
+          <div class="line-content">
+            <label for="houseType">Tipo de imóvel: </label>
+            <input type="radio" name="houseType" id="house" required> <span>Casa</span>
+            <input type="radio" name="houseType" id="apartment" required> <span>Apartamento</span>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="line-content">
+            <label for="resume">Resumo do currículo: </label>
+            <textarea id="resume" name="resumo" maxlength="1000" cols="100" rows="20" required></textarea>
+          </div>
+          <div class="line-content">
+            <label for="role">Cargo: </label>
+            <input type="text" name="role" id="role" maxlength="40" required>
+          </div>
+          <div class="line-content">
+            <label for="roleDescription">Descrição do cargo: </label>
+            <input type="text" id="roleDescription" name="roleDescription" maxlength="500" required>
+          </div>
+          <div class="line-content">
+            <label for="startDate">Data de início: </label>
+            <input type="text" class="input-data" name="startDate" value="" required>
+          </div>
+        </fieldset>
+        <button class="submit-button" type="submit">Enviar</button>
+        <button class="clear-button" type="button">Limpar</button>
+      </div>
+    </form>
+  </main>
+  <section class="form-data"></section>
   <script src="script.js"></script>
 </body>
 </html>

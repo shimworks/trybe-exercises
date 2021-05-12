@@ -8,7 +8,6 @@
   <link href="bootstrap-5.0.0-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
-  <script src="./path/to/just-validate.min.js"></script>
   <title>Form</title>
 </head>
 <body>
@@ -21,18 +20,18 @@
         <fieldset>
           <div class="line-content">
             <label for="name">Nome: </label>
-            <input type="text" name="name" id="nome" maxlength="40" required>
+            <input type="text" name="name" id="name" maxlength="40" required>
           </div>
           <div class="line-content">
             <label for="email">Endereço de e-mail</label>
             <input type="email" name="email" id="email" maxlength="50" required>
           </div>
           <div class="line-content">
-            <label for="cpf-number">CPF: </label>
+            <label for="cpf">CPF: </label>
             <input type="text" name="cpf" id="cpf-number" maxlength="11" required>
           </div>
           <div class="line-content">
-            <label for="">Endereço: </label>
+            <label for="adress">Endereço: </label>
             <input type="text" name="adress" id="adress" maxlength="200" required>
           </div>
           <div class="line-content">
@@ -53,7 +52,7 @@
         <fieldset>
           <div class="line-content">
             <label for="resume">Resumo do currículo: </label>
-            <textarea id="resume" name="resumo" maxlength="1000" cols="15" rows="2" required></textarea>
+            <textarea id="resume" name="resume" maxlength="1000" cols="15" rows="2" required></textarea>
           </div>
           <div class="line-content">
             <label for="role">Cargo: </label>

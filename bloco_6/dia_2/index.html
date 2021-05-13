@@ -10,12 +10,13 @@
   <title>Form</title>
 </head>
 <body>
-  <header class="container text-center"></header>
-  <h1 class="display-3"> Formulário para cadastro de curriculo</h1>
-  <p class="lead">Preencha os campos abaixo.</p>
+  <header class="container text-center shadow-lg p-3 mb-5 bg-body rounded">
+    <h1 class="display-3"> Formulário para cadastro de curriculo</h1>
+    <p class="lead">Preencha os campos abaixo.</p>
+  </header>
   <main>
     <form action="" method="GET">
-      <div>
+      <div class="shadow-lg p-3 mb-5 bg-body rounded">
         <fieldset>
           <div class="container form-check">
             <label class="form-label"for="name">Nome: </label>
@@ -26,48 +27,48 @@
             <input class="form-control" type="email" name="email" id="email" maxlength="50" required>
           </div>
           <div class="container form-check">
-            <label for="cpf">CPF: </label>
-            <input type="text" name="cpf" id="cpf-number" maxlength="11" required>
+            <label class="form-label" for="cpf">CPF: </label>
+            <input class="form-control" type="text" name="cpf" id="cpf-number" maxlength="11" required>
           </div>
           <div class="container form-check">
-            <label for="adress">Endereço: </label>
-            <input type="text" name="adress" id="adress" maxlength="200" required>
+            <label class="form-label" for="adress">Endereço: </label>
+            <input class="form-control" type="text" name="adress" id="adress" maxlength="200" required>
           </div>
           <div class="container form-check">
-            <label for="city">Cidade: </label>
-            <input type="text" name="city" id="city" maxlength="200" required>
+            <label class="form-label" for="city">Cidade: </label>
+            <input class="form-control" type="text" name="city" id="city" maxlength="200" required>
           </div>
           <div class="container form-check">
-            <label for="state">Estado: </label>
+            <label class="form-label" for="state">Estado: </label>
             <select name="state" id="state" required></select>
             <option disabled selected value>Selecione seu estado</option>
           </div>
           <div class="container form-check">
-            <label for="houseType">Tipo de imóvel: </label>
+            <label class="form-label" for="houseType">Tipo de imóvel: </label>
             <input type="radio" name="houseType" id="house" required> <span>Casa</span>
             <input type="radio" name="houseType" id="apartment" required> <span>Apartamento</span>
           </div>
         </fieldset>
         <fieldset>
           <div class="container form-check">
-            <label for="resume">Resumo do currículo: </label>
-            <textarea id="resume" name="resume" maxlength="1000" cols="15" rows="2" required></textarea>
+            <label class="form-label" for="resume">Resumo do currículo: </label>
+            <textarea class="form-control" id="resume" name="resume" maxlength="1000" cols="15" rows="2" required></textarea>
           </div>
           <div class="container form-check">
-            <label for="role">Cargo: </label>
-            <input type="text" name="role" id="role" maxlength="40" required>
+            <label class="form-label" for="role">Cargo: </label>
+            <input class="form-control" type="text" name="role" id="role" maxlength="40" required>
           </div>
           <div class="container form-check">
-            <label for="roleDescription">Descrição do cargo: </label>
-            <input type="text" id="roleDescription" name="roleDescription" maxlength="500" required>
+            <label class="form-label" for="roleDescription">Descrição do cargo: </label>
+            <input class="form-control" type="text" id="roleDescription" name="roleDescription" maxlength="500" required>
           </div>
           <div class="container form-check">
-            <label for="startDate">Data de início: </label>
-            <input id="datepicker" type="text" class="input-data" name="startDate" value="" required>
+            <label class="form-label" for="startDate">Data de início: </label>
+            <input id="datepicker" type="text" class="input-data form-control" name="startDate" value="" required>
           </div>
         </fieldset>
-        <button class="submit-button" type="submit">Enviar</button>
-        <button class="clear-button" type="button">Limpar</button>
+        <button class="submit-button btn btn-success" type="submit">Enviar</button>
+        <button class="clear-button btn btn-danger" type="button">Limpar</button>
       </div>
     </form>
   </main>

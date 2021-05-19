@@ -1,0 +1,62 @@
+body {
+ width: 90%;
+ margin: auto;
+}
+
+p {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 30px;
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 30px 0px;
+}
+
+@media screen and (min-width: 800px){
+    body {
+        background-color: rgb(219, 219, 219);
+        width: 80%;
+    }
+
+    section{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+    figure {
+        max-width: 45%;
+        margin: 10px 3px;
+        box-shadow: 1px 1px 4px black;
+    }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1600px){
+    body {
+        background-color: rgb(180, 180, 180);
+        width: 80%;
+    }
+    body p {
+        font-size: 16px;
+    }
+    section{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+    figure {
+        margin: 10px 3px;
+        box-shadow: 1px 1px 4px black;
+    }
+}

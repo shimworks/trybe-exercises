@@ -15,32 +15,32 @@
 - [x] 1.4 Unix & Bash - Parte 2
 
 #### Bloco 2 - Git, GitHub e Internet ✅
-- [x] 1.1 Git & GitHub - O que é e para que serve
-- [x] 1.2 Git & GitHub - Entendendo os comandos
-- [x] 1.3 Internet - Entendendo como ela funciona
+- [x] 2.1 Git & GitHub - O que é e para que serve
+- [x] 2.2 Git & GitHub - Entendendo os comandos
+- [x] 2.3 Internet - Entendendo como ela funciona
 
 #### Bloco 3 - Introdução à HTML e CSS ✅
-- [x] 1.1 Introdução - HTML & CSS
-- [x] 1.1 HTML & CSS - Estruturas de página
-- [x] 1.2 HTML & CSS - Primeiros passos em CSS
-- [x] 1.3 HTML & CSS - Seletores e posicionamento
-- [x] 1.4 HTML Semântico
+- [x] 3.1 Introdução - HTML & CSS
+- [x] 3.1 HTML & CSS - Estruturas de página
+- [x] 3.2 HTML & CSS - Primeiros passos em CSS
+- [x] 3.3 HTML & CSS - Seletores e posicionamento
+- [x] 3.4 HTML Semântico
 - [x] _Projeto - Lessons Learned_ 💯
 
 #### Bloco 4 - Introdução à JavaScript e Lógica de Programação ✅
-- [x] 1.1 Introdução - JavaScript
-- [x] 1.1 JavaScript - Primeiros passos
-- [x] 1.2 JavaScript - Array e Loop For
-- [x] 1.3 JavaScript - Lógica de Programação e Algoritmos
-- [x] 1.4 JavaScript - Objetos e Funções
+- [x] 4.1 Introdução - JavaScript
+- [x] 4.1 JavaScript - Primeiros passos
+- [x] 4.2 JavaScript - Array e Loop For
+- [x] 4.3 JavaScript - Lógica de Programação e Algoritmos
+- [x] 4.4 JavaScript - Objetos e Funções
 - [x] _Projeto - Playground Functions_ 💯
 
 #### Bloco 05 - JavaScript: DOM, Eventos e Web Storage ✅
-- [x] 1.1 JavaScript - DOM e seletores
-- [x] 1.2 JavaScript - Trabalhando com elementos
-- [x] 1.3 JavaScript - Eventos
-- [x] 1.4 JavaScript - Web Storage
-- [x] 1.5 Fundamentos - JavaScript - Projetos
+- [x] 5.1 JavaScript - DOM e seletores
+- [x] 5.2 JavaScript - Trabalhando com elementos
+- [x] 5.3 JavaScript - Eventos
+- [x] 5.4 JavaScript - Web Storage
+- [x] 5.5 Fundamentos - JavaScript - Projetos
 - [x] _Projeto - Arte com Pixels_ 💯
 - [x] _Projeto - Lista de Tarefas_ 💯
 - [ ] _(Bônus) Projeto - Meme Generator_
@@ -48,10 +48,16 @@
 - [ ] _(Bônus) Projeto - Carta Misteriosa_
 
 #### Bloco 06 - HTML e CSS: Forms, Flexbox e Responsividade ✅
-- [x] 1.1 HTML & CSS - Forms
-- [x] 1.2 Bibliotecas JavaScript e Frameworks CSS
-- [x] 1.3 Introdução - CSS Flexbox
-- [x] 1.3 CSS Flexbox - Parte 1 
-- [x] 1.4 CSS Flexbox - Parte 2
-- [x] 1.5 CSS Responsivo - Mobile First
+- [x] 6.1 HTML & CSS - Forms
+- [x] 6.2 Bibliotecas JavaScript e Frameworks CSS
+- [x] 6.3 Introdução - CSS Flexbox
+- [x] 6.3 CSS Flexbox - Parte 1 
+- [x] 6.4 CSS Flexbox - Parte 2
+- [x] 6.5 CSS Responsivo - Mobile First
 - [ ] _Projeto - Trybewarts_
+
+#### Bloco 07 - HTML e CSS: Forms, Flexbox e Responsividade ✅
+- [x] 7.1 JavaScript ES6 - let, const, arrow functions e template literals
+- [ ] 7.2 JavaScript ES6 - Objects
+- [ ] 7.3 Testes Unitários em JavaScript
+- [ ] 7.4 Projeto - JavaScript Testes Unitários

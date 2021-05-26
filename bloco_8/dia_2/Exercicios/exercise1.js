@@ -164,6 +164,9 @@ const books = [
 const expectedResult = false;
 
 function authorUnique() {
-  return books.some((author1) => author1.author.birthYear === books.forEach((author2) => author2.author.birthYear))
-}
+  return books.every((book) =>
+  books.some((bookSome) =>
+  (bookSome.author.birthYear === book.author.birthYear)
+  && (bookSome.author.name !== book.author.name)))
+};
 assert.strictEqual(authorUnique(), expectedResult);

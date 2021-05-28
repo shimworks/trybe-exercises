@@ -63,4 +63,8 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
+function longestNamedBook() {
+  return books.reduce((acc, cur) => cur.name.length > acc.name.length ? cur : acc)
+}
+console.log(longestNamedBook())
+// assert.deepStrictEqual(longestNamedBook(), expectedResult);

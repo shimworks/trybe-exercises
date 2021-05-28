@@ -63,4 +63,10 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
+const allnames = (acc, cur) => `${acc} ${cur.author.name}/`
+
+function averageAge() {
+  return books.reduce(allnames, 'Names:')
+}
+console.log(averageAge())
+// assert.strictEqual(averageAge(), expectedResult);

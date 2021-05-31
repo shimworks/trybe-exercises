@@ -62,11 +62,14 @@ const books = [
     releaseYear: 1928,
   },
 ];
+const expectedResult = "Names: George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.";
 
-const allnames = (acc, cur) => `${acc} ${cur.author.name}/`
+const allnames = (acc, cur, index, array) => 
+index === array.length - 1 ?
+`${acc} ${cur.author.name}.` :
+`${acc} ${cur.author.name},`
 
 function averageAge() {
   return books.reduce(allnames, 'Names:')
 }
-console.log(averageAge())
-// assert.strictEqual(averageAge(), expectedResult);
+assert.strictEqual(averageAge(), expectedResult);

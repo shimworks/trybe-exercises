@@ -64,8 +64,8 @@ const handleError = (errorReason) => console.log(`Error getting temperature: ${e
 
 // definição da função sendMarsTemperature...
 const sendMarsTemperature = (callback, error) => {
+  const probability = Math.random() >= 0.4;
   setTimeout(() => {
-    const probability = Math.random() >= 0.4;
     if (probability) {
       return callback(getMarsTemperature())
     } else {

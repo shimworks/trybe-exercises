@@ -1,14 +1,14 @@
-function execute() {
-  return new Promise((resolve, reject) => {
+async function execute() {
+  try {
     let arraySum = numGen();
     if (arraySum > 8000) {
-      return reject(new Error (arraySum));
+      throw (new Error (`É mais de oito mil!${arraySum}`));
     }
-    resolve(arraySum);
-  })
-  .then(arrSum => div(arrSum))
-  .then(arrDiv => sum(arrDiv))
-  .catch(error => console.log(`É mais de oito mil! Essa promise deve estar quebrada! ${error}`))
+    await(arrSum => div(arrSum))
+    await(arrDiv => sum(arrDiv))
+  } catch (error) {
+      console.log(error)
+  }
 }
 execute();
 

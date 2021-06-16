@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "jest": "^27.0.4",
+    "node-fetch": "^2.6.1",
     "save-dev": "0.0.1-security"
   }
 }

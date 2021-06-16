@@ -1,5 +1,5 @@
-
 const func = require('./exercicio');
+jest.mock('./exercicio')
 
 describe('testa rng', () => {
   it('rng', () => {
@@ -33,5 +33,16 @@ describe('testa rng', () => {
       expect(func.rng).toHaveBeenCalled();
       expect(func.rng).toHaveBeenCalledTimes(1);
       expect(func.rng).toHaveBeenCalledWith(5);
+  })
+})
+
+describe('testa exercicio 6', () => {
+  it('exec 6', async () => {
+    func.funBeg.mockReset();
+    func.funBeg.mockResolvedValueOnce('veio um dog feio')
+    func.funBeg.mockRejectedValueOnce('morreu na rua')
+
+      await expect(func.funBeg()).resolves.toBe('veio um dog feio')
+      await expect(func.funBeg()).rejects.toBe('morreu na rua')
   })
 })

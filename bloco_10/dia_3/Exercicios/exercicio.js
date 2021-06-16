@@ -1,20 +1,16 @@
+const fetch = require ('node-fetch')
+
 function rng() {
   return Math.random()*100
 }
 
-function upperCut(str) {
-  return str.toUpperCase()
-}
-
-function dupo() {
-
-}
-
-function tri() {
-  
+async function funBeg() {
+  let result = await fetch('https://dog.ceo/api/breeds/image/random')
+  result = await result.json()
 }
 
 module.exports = {
   rng,
-  upperCut,
+  funBeg,
 };
+

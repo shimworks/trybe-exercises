@@ -1,0 +1,22 @@
+#root{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+
+}
+
+.Cont {
+  margin: 50px;
+  display: flex;
+  width: 300px;
+  border-style: dashed;
+  align-items: center;
+}
+
+.ContInner {
+  margin: 15px;
+}

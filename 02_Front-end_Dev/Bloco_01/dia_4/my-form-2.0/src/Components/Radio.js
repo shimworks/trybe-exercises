@@ -5,10 +5,14 @@ class Radio extends React.Component {
     const { handlerOne } = this.props
     return (
       <div>
-        <input type="radio" id="Casa" name="home" value="casa" onChange={handlerOne}></input>
-        <label htmlFor="Casa">Casa</label>
-        <input type="radio" id="Apartamento" name="home" value="apartamento"onChange={handlerOne}></input>
-        <label htmlFor="Apartamento">Apartamento</label>
+        <label htmlFor="Casa">
+        <input type="radio" id="Casa" name="home" value="casa" onChange={handlerOne} required/>
+        Casa
+        </label>
+        <label htmlFor="Apartamento">
+        <input type="radio" id="Apartamento" name="home" value="apartamento"onChange={handlerOne} />
+        Apartamento
+        </label>
       </div>
     )
   }

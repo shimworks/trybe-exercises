@@ -6,7 +6,7 @@ class Name extends React.Component {
     return (
       <label>
       Name:
-      <input maxLength='40'name="name" value={value} onChange={handlerOne}></input>
+      <input required maxLength='40'name="name" value={value} onChange={handlerOne}/>
       </label> 
     )
   }

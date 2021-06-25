@@ -5,7 +5,7 @@ class Estado extends React.Component {
     const { handlerOne, value } = this.props
     return (
       <label>
-        <select name="estado" value={value} onChange={handlerOne}>
+        <select name="estado" value={value} onChange={handlerOne} required>
           <option value="Parana">Paraná</option>
           <option value="Pará">Pará</option>
           <option value="SaoPaulo">São Paulo</option>

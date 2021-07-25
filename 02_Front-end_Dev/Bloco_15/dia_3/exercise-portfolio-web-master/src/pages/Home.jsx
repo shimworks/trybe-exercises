@@ -18,9 +18,18 @@ class Home extends React.Component {
             <p>Entusiasta na criação de jogos e programação</p>
           </div>
         </div>
-        <div>
+        <div className="backgroundImage">
+          <div className="text">
           <h1>Habilidades</h1>
-          
+          <ul>
+            <li>Javascript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React</li>
+            <li>Node</li>
+            <li>Git</li>
+          </ul>
+          </div>
         </div>
       </section>
       </>

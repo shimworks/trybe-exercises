@@ -22,7 +22,54 @@
   color: #61dafb;
 }
 
-img {
+.header {
+  background-color: grey;
+
+}
+
+.linkContent {
+  background-color:grey;
+  margin-left: 10%;
+  width: 400px;
   display: flex;
+  justify-content: space-evenly;
+
+}
+
+.Link {
+  text-decoration: none;
+  background-color: #b1b1b1;
+  color: black;
+  flex-grow: 1;
+  margin-right: -4px;
+  box-sizing: border-box;
+  border: solid grey;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.Link:hover {
+  background-color: rgb(153, 153, 255);
+  transition: background .2s;
+}
+
+footer {
+  color: white !important;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: grey;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
+
+}
+
+a {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+p {
+  vertical-align: middle;
 }

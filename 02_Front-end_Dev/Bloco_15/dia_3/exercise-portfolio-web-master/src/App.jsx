@@ -5,7 +5,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
-
+import { AiFillGithub } from 'react-icons/ai'
 
 function App() {
   return (
@@ -14,10 +14,14 @@ function App() {
         <header className="">
           <h1>Meu portifólio</h1>
         </header>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/projects">Projects</Link>
+        <div className="header">
+          <div className="linkContent">
+          <Link className="Link" to="/">Home</Link>
+          <Link className="Link" to="/about">About</Link>
+          <Link className="Link" to="/contact">Contact</Link>
+          <Link className="Link" to="/projects">Projects</Link>
+          </div>
+        </div>
       </div>
 
       <Switch>
@@ -26,6 +30,10 @@ function App() {
         <Route exact path="/contact" component={Contact}/>
         <Route exact path="/projects" component={Projects}/>
       </Switch>
+      <footer>
+        <span>Todos os direitos reservados a Caio Takeshi Shimizo</span>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/shimworks"><AiFillGithub /> GitHub</a>
+      </footer>
     </BrowserRouter>
   );
 }

@@ -1,0 +1,27 @@
+body {
+background-color: rgb(199, 199, 199);
+  display: flex;
+  margin: 0;
+
+}
+
+.backgroundImage {
+  background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.2)), url("../Imgs/Background.vsg");
+  height: 40vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  padding-left: 10%;
+}

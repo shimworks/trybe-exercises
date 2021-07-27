@@ -12,7 +12,6 @@ class ProfessionalForm extends React.Component {
       description: '',
     };
     this.handleChange = this.handleChange.bind(this);
-    this.passoamais = this.passoamais.bind(this);
   }
 
   handleChange({ target: { name, value } }) {
@@ -21,14 +20,10 @@ class ProfessionalForm extends React.Component {
     });
   }
 
-  passoamais() {
-    // eslint-disable-next-line react/prop-types
-    const { disProf } = this.props;
-    disProf(this.state);
-  }
-
   render() {
     const { resum, cargo, description } = this.state;
+    // eslint-disable-next-line react/prop-types
+    const { disProf } = this.props;
     return (
       <fieldset>
         <form>
@@ -56,7 +51,7 @@ class ProfessionalForm extends React.Component {
           />
           <Link
             to="/formDisplay"
-            onClick={ this.passoamais }
+            onClick={ () => disProf(this.state) }
           >
             Enviar
 

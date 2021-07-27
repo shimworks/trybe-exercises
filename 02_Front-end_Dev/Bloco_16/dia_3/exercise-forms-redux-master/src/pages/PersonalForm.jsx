@@ -15,7 +15,6 @@ class PersonalForm extends React.Component {
       state: '',
     };
     this.handleInput = this.handleInput.bind(this);
-    this.umafuncao = this.umafuncao.bind(this);
   }
 
   handleInput({ target: { name, value } }) {
@@ -24,15 +23,10 @@ class PersonalForm extends React.Component {
     });
   }
 
-  umafuncao() {
-    // eslint-disable-next-line react/prop-types
-    const { chave } = this.props;
-    chave(this.state);
-  }
-
   render() {
     const { name, email, cpf, adress, city, state } = this.state;
-    console.log(this.props);
+    // eslint-disable-next-line react/prop-types
+    const { chave } = this.props;
     return (
       <fieldset>
         <form>
@@ -60,7 +54,7 @@ class PersonalForm extends React.Component {
           </label>
           <Link
             to="/professionalForm"
-            onClick={ this.umafuncao }
+            onClick={ () => chave(this.state) }
             type="button"
           >
             Enviar

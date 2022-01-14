@@ -6,7 +6,7 @@ chai.use(chaiHttp);
 
 const { expect } = chai;
 
-const app = require('../../../index');
+const app = require('../../../src/index');
 const { User } = require('../../../models');
 
 describe('Busca todos os usuários', () => {

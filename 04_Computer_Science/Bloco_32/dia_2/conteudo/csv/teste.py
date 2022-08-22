@@ -1,11 +1,7 @@
-a, *b = "cdasdasd"
-print(a)  # saída: c
-print(b)  # saída: d
+test = {}
+counter = 0
 
-head, tail = [
-    1,
-    2,
-    3,
-]
-print(head)  # saída: 1
-print(tail)  # saída: [2, 3]
+while counter <= 2:
+    test["first"] = {"second": counter}
+    counter += 1
+    print(test)

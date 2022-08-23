@@ -36,3 +36,6 @@ console.log(`Quadrado de lado 100cm ${ex.square(100)}cm2`);
 console.log(`Retângulo de base 10cm e altura 25cm: ${ex.rectangle(10, 25)}cm2`);
 console.log(`Retângulo de base 5cm e altura 30cm: ${ex.rectangle(5, 30)}cm2`);
 console.log(`Retângulo de base 100cm e altura 200cm: ${ex.rectangle(100, 200)}cm2`);
+console.log(ex.losangle(32, 18));
+console.log(ex.trapeze(100, 70, 50));
+console.log(ex.circle(25));
